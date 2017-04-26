@@ -1,5 +1,7 @@
 # Patient Portal UI
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sethbergman/polymer-patient-portal.svg)](https://greenkeeper.io/)
+
 This is the Polymer UI for the Patient Portal demo app. 
 
 ## Running
