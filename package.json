@@ -1,0 +1,17 @@
+{
+  "name": "polymer-starter-kit-custom-build",
+  "version": "0.0.0",
+  "description": "A starting point for Polymer 1.0 custom build apps",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-gh-pages": "^0.5.4"
+  },
+  "engines": {
+    "node": ">=4.0"
+  },
+  "private": true
+}

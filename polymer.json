@@ -1,0 +1,37 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/patient-portal.html",
+  "fragments": [
+    "src/login-view.html",
+    "src/main/main-view.html",
+    "src/main/not-found-view.html",
+    "src/main/patients/patients-view.html",
+    "src/main/analytics/analytics-view.html"
+  ],
+  "sources": [
+    "src/**/*",
+    "images/**/*",
+    "bower.json"
+  ],
+  "extraDependencies": [
+    "manifest.json",
+    "bower_components/webcomponentsjs/webcomponents-lite.min.js",
+    "bower_components/fetch/fetch.js",
+    "bower_components/moment/min/moment.min.js"
+  ],
+  "builds": [{
+    "name": "bundled",
+    "addServiceWorker": true,
+    "bundle": true,
+    "js": {
+      "compile": true,
+      "minify": true
+    },
+    "css": {
+      "minify": true
+    },
+    "html": {
+      "minify": true
+    }
+  }]
+}
