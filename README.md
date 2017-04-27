@@ -39,6 +39,6 @@ Lastly, I will connect my own domain and firebase will provision an SSL on it fo
 
 #### Resources
 
-[Polymer Project](https://www.polymer-project.org/)
+* __[Polymer Project](https://www.polymer-project.org/)__
 
-[Webcomponents](https://www.webcomponents.org/)
+* __[Webcomponents.org](https://www.webcomponents.org/)__
