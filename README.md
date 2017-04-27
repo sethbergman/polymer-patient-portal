@@ -1,25 +1,44 @@
 # Patient Portal UI
 
-This is the Polymer UI for the Patient Portal demo app. 
+This is the Polymer UI for the Patient Portal demo app.
 
-## Running
+## Setup
+_Make sure you have NPM and Node.js installed._
 
-Make sure you have NPM and installed. 
+### Install Polymer CLI
 
-0. Setup and run backend: https://gitlab.vaadin.com/marcus/patient-portal-demo-backend
+`npm install -g polymer-cli@next
+`
 
-1. Install `polymer-cli@next`
+### Install dependencies
 
-`$ npm install -g polymer-cli@next`
+`bower install
+`
 
-2. Install dependencies
+### Run application with development server
 
-`bower install`
+`polymer serve
+`
 
-3. Run application with development server
+### Build
 
-`polymer serve`
+`polymer build
+`
 
-4. Build
+### Deployment
 
-`polymer build` and serve from `build/bundled`
+I have been using [Firebase](https://firebase.google.com/docs/hosting/deploying) to host my Polymer apps. It's a very simple setup.
+
+Once I've run the `polymer build` command, I initialize a new project in Firebase with `firebase init` and follow the prompts. I don't change the default values, except for the public directory setting.
+
+Running `polymer build` bundles your files, and makes them accessable from the build/bundled directory.
+
+Then just run `firebase deploy -p build/bundled` and viola!
+
+Lastly, I will connect my own domain and firebase will provision an SSL on it for free. It doesn't get much simpler than that my friends!
+
+#### Resources
+
+[Polymer Project](https://www.polymer-project.org/)
+
+[Webcomponents](https://www.webcomponents.org/)
